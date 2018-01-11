@@ -13,7 +13,6 @@
 
 	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
 
-	
 	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
 	
 </head>
@@ -2612,7 +2611,7 @@ return {number} The total number of PathPoints in this Path.</a>
 
     
     <div class="description">
-        <p>Creates a new Button object.</p>
+        <p>创建一个Button object<code>game.add.button(x,y,callbackContext,overFrame,outFrame,downFrame,upFrame,group)</code></p>
     </div>
     
 
@@ -2682,7 +2681,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The x coordinate of the Button. The coordinate is relative to any parent container this button may be in.</p></td>
+            <td class="description last"><p>Button的x坐标,The coordinate is relative to any parent container this button may be in(相对于其父容器)</p></td>
         </tr>
 
 	
@@ -2721,7 +2720,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The y coordinate of the Button. The coordinate is relative to any parent container this button may be in.</p></td>
+            <td class="description last"><p>Button的y坐标,The coordinate is relative to any parent container this button may be in(相对于其父容器)</p></td>
         </tr>
 
 	
@@ -2758,7 +2757,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The image key as defined in the Game.Cache to use as the texture for this button.</p></td>
+            <td class="description last"><p>The image key as defined in the Game.Cache to use as the texture for this button.(定义在Game.Cache的图片缓存标识,用来作为button的纹理)</p></td>
         </tr>
 
 	
@@ -2795,7 +2794,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The function to call when this button is pressed</p></td>
+            <td class="description last"><p>The function to call when this button is pressed(按钮被点击时的callback)</p></td>
         </tr>
 
 	
@@ -2832,7 +2831,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The context in which the callback will be called (usually 'this')</p></td>
+            <td class="description last"><p>The context in which the callback will be called (usually 'this')(callback的上下文,也就是this的指向)</p></td>
         </tr>
 
 	
@@ -2872,7 +2871,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>This is the frame or frameName that will be set when this button is in an over state. Give either a number to use a frame ID or a string for a frame name.</p></td>
+            <td class="description last"><p>This is the frame or frameName that will be set when this button is in an over state. Give either a number to use a frame ID or a string for a frame name.<br>(按钮处于over状态时的纹理,可以指定一个图片缓存标识,如果该按钮是使用spritesheet作为纹理的话,可以指定某一帧作为over状态)</p></td>
         </tr>
 
 	
@@ -2912,7 +2911,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>This is the frame or frameName that will be set when this button is in an out state. Give either a number to use a frame ID or a string for a frame name.</p></td>
+            <td class="description last"><p>This is the frame or frameName that will be set when this button is in an out state. Give either a number to use a frame ID or a string for a frame name.<br>(按钮处于out状态时的纹理,可以指定一个图片缓存标识,如果该按钮是使用spritesheet作为纹理的话,可以指定某一帧作为out状态)</p></td>
         </tr>
 
 	
@@ -2952,7 +2951,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>This is the frame or frameName that will be set when this button is in a down state. Give either a number to use a frame ID or a string for a frame name.</p></td>
+            <td class="description last"><p>This is the frame or frameName that will be set when this button is in a down state. Give either a number to use a frame ID or a string for a frame name.<br>(按钮处于down状态时的纹理,可以指定一个图片缓存标识,如果该按钮是使用spritesheet作为纹理的话,可以指定某一帧作为down状态)</p></td>
         </tr>
 
 	
@@ -2992,7 +2991,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>This is the frame or frameName that will be set when this button is in an up state. Give either a number to use a frame ID or a string for a frame name.</p></td>
+            <td class="description last"><p>This is the frame or frameName that will be set when this button is in an up state. Give either a number to use a frame ID or a string for a frame name.<br>(按钮处于up状态时的纹理,可以指定一个图片缓存标识,如果该按钮是使用spritesheet作为纹理的话,可以指定某一帧作为up状态)</p></td>
         </tr>
 
 	
@@ -3029,7 +3028,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>Optional Group to add the object to. If not specified it will be added to the World group.</p></td>
+            <td class="description last"><p>Optional Group to add the object to. If not specified it will be added to the World group.<br>(把按钮添加进一个指定的Group,如果不指定,则按钮会自动加入世界组中)<p></td>
         </tr>
 
 	
@@ -3052,7 +3051,7 @@ return {number} The total number of PathPoints in this Path.</a>
         </div>
     
     <div class="returns-desc param-desc">
-        <p>The newly created Button object.</p>
+        <p>The newly created Button object.(返回一个按钮对象)</p>
     </div>
 
 
@@ -3398,8 +3397,10 @@ return {number} The total number of PathPoints in this Path.</a>
 
     
     <div class="description">
-        <p>Create a new Emitter.</p>
-<p>A particle emitter can be used for one-time explosions or for<br>continuous effects like rain and fire. All it really does is launch Particle objects out<br>at set intervals, and fixes their positions and velocities accordingly.</p>
+        <p>Create a new Emitter(创建一个发射器)<code>game.add.emitter(x,y,maxParticles)</code></p>
+<p>A particle emitter can be used for one-time explosions or for<br>continuous effects like rain and fire. All it really does is launch Particle objects out<br>at set intervals, and fixes their positions and velocities accordingly.<br>
+(粒子发射器可以一次性爆发式的发射出粒子或者模拟一些持续性的效果,像是下雨,火焰等等<br>发射器会定时的发射出粒子,修正粒子的位置和速度)
+</p>
     </div>
     
 
@@ -3469,7 +3470,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The x coordinate within the Emitter that the particles are emitted from.</p></td>
+            <td class="description last"><p>The x coordinate within the Emitter that the particles are emitted from.<br>(发射器的x坐标,粒子会从这个地方发射出来)</p></td>
         </tr>
 
 	
@@ -3508,7 +3509,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The y coordinate within the Emitter that the particles are emitted from.</p></td>
+            <td class="description last"><p>The y coordinate within the Emitter that the particles are emitted from.<br>(发射器的y坐标,粒子会从这里发射出来)</p></td>
         </tr>
 
 	
@@ -3547,7 +3548,7 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The total number of particles in this emitter.</p></td>
+            <td class="description last"><p>The total number of particles in this emitter.<br>(发射器的粒子总数)</p></td>
         </tr>
 
 	
@@ -3570,7 +3571,7 @@ return {number} The total number of PathPoints in this Path.</a>
         </div>
     
     <div class="returns-desc param-desc">
-        <p>The newly created emitter object.</p>
+        <p>The newly created emitter object.(返回一个发射器对象)</p>
     </div>
 
 
