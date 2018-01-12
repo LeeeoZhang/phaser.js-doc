@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -4173,7 +4172,10 @@ return {number} The total number of PathPoints in this Path.</a>
 
     
     <div class="description">
-        <p>A Group is a container for display objects that allows for fast pooling, recycling and collision checks.</p>
+        <p>A Group is a container for display objects that allows for fast pooling, recycling and collision checks.<br>
+            (Group是一个容器,你可以把一些游戏对象存放在里面,就可以同时对Group里面的游戏对象进行一些操作,如回收,碰撞检测等)<br>
+            <code>game.add.group(parent,name,addToStage,enableBody,physicsBodyType)</code>
+        </p>
     </div>
     
 
@@ -4241,7 +4243,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The parent Group or DisplayObjectContainer that will hold this group, if any. If set to null the Group won't be added to the display list. If undefined it will be added to World by default.</p></td>
+            <td class="description last"><p>The parent Group or DisplayObjectContainer that will hold this group, if any. If set to null the Group won't be added to the display list. If undefined it will be added to World by default.<br>
+                (指定包含这个Group的父容器,设置为<code>null</code>则这个Group不会出现在世界中,设置为<code>undefined</code>则会默认添加到游戏世界中)
+            </p></td>
         </tr>
 
 	
@@ -4280,7 +4284,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>A name for this Group. Not used internally but useful for debugging.</p></td>
+            <td class="description last"><p>A name for this Group. Not used internally but useful for debugging.<br>
+                (Group的名字,在debugg中很有用)
+            </p></td>
         </tr>
 
 	
@@ -4319,7 +4325,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>If set to true this Group will be added directly to the Game.Stage instead of Game.World.</p></td>
+            <td class="description last"><p>If set to true this Group will be added directly to the Game.Stage instead of Game.World.<br>
+                (设置为<code>true</code>的话,Group将会直接添加到<code>Game.Stage</code>中而不是<code>Game.World</code>)
+            </p></td>
         </tr>
 
 	
@@ -4358,7 +4366,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>If true all Sprites created with <code>Group.create</code> or <code>Group.createMulitple</code> will have a physics body created on them. Change the body type with physicsBodyType.</p></td>
+            <td class="description last"><>If true all Sprites created with <code>Group.create</code> or <code>Group.createMulitple</code> will have a physics body created on them. Change the body type with physicsBodyType.<br>
+                (如果设置为<code>true</code>,所有通过<code>Group.create</code>或者<code>Group.createMulitple</code>创建的精灵将会拥有物理body,可以通过<code>physicsBodyType</code>改变body的类型)
+            </p></td>
         </tr>
 
 	
@@ -4397,7 +4407,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>If enableBody is true this is the type of physics body that is created on new Sprites. Phaser.Physics.ARCADE, Phaser.Physics.P2, Phaser.Physics.NINJA, etc.</p></td>
+            <td class="description last"><p>If enableBody is true this is the type of physics body that is created on new Sprites. Phaser.Physics.ARCADE, Phaser.Physics.P2, Phaser.Physics.NINJA, etc.<br>
+                (<code>enableBody</code>为true时,Group中成员的物理body的类型,ARCADE,P2,NINJA等)
+            </p></td>
         </tr>
 
 	
@@ -4420,7 +4432,7 @@ return {number} The total number of PathPoints in this Path.</a>
         </div>
     
     <div class="returns-desc param-desc">
-        <p>The newly created Group.</p>
+        <p>The newly created Group.(返回创建的Group对象)</p>
     </div>
 
 
@@ -4488,7 +4500,10 @@ return {number} The total number of PathPoints in this Path.</a>
     <div class="description">
         <p>Create a new <code>Image</code> object.</p>
 <p>An Image is a light-weight object you can use to display anything that doesn't need physics or animation.</p>
-<p>It can still rotate, scale, crop and receive input events.<br>This makes it perfect for logos, backgrounds, simple buttons and other non-Sprite graphics.</p>
+<p>It can still rotate, scale, crop and receive input events.<br>This makes it perfect for logos, backgrounds, simple buttons and other non-Sprite graphics.<br>
+    (创建一个图片对象,图片对象相当轻量,你可以用在任何不需要物理效果或者动画的地方<br>图片对象可以旋转,缩放,裁剪,触发事件<br>
+    用图片对象来创建logo,背景,简单的按钮,不需要精灵的简单图形都是相当完美的)
+</p>
     </div>
     
 
@@ -4558,7 +4573,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The x coordinate of the Image. The coordinate is relative to any parent container this Image may be in.</p></td>
+            <td class="description last"><p>The x coordinate of the Image. The coordinate is relative to any parent container this Image may be in.<br>
+                (x坐标,相对于父容器)
+            </p></td>
         </tr>
 
 	
@@ -4597,7 +4614,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The y coordinate of the Image. The coordinate is relative to any parent container this Image may be in.</p></td>
+            <td class="description last"><p>The y coordinate of the Image. The coordinate is relative to any parent container this Image may be in.<br>
+                (y坐标,相对于父容器)
+            </p></td>
         </tr>
 
 	
