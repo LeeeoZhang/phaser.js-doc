@@ -4665,7 +4665,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The image used as a texture by this display object during rendering. If a string Phaser will get for an entry in the Image Cache. Or it can be an instance of a RenderTexture, BitmapData, Video or PIXI.Texture.</p></td>
+            <td class="description last"><p>The image used as a texture by this display object during rendering. If a string Phaser will get for an entry in the Image Cache. Or it can be an instance of a RenderTexture, BitmapData, Video or PIXI.Texture.<br>
+                (渲染图片对象所用的纹理,可以通过一个字符串标识从图片缓存系统中获取,或者是RenderTexture, BitmapData, Video or PIXI.Texture的实例)
+            </p></td>
         </tr>
 
 	
@@ -4705,7 +4707,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>If a Texture Atlas or Sprite Sheet is used this allows you to specify the frame to be used. Use either an integer for a Frame ID or a string for a frame name.</p></td>
+            <td class="description last"><p>If a Texture Atlas or Sprite Sheet is used this allows you to specify the frame to be used. Use either an integer for a Frame ID or a string for a frame name.<br>
+                (如果你使用了一个Spritesheet或者TextureAtlas,就可以指定某一帧来作为图像对象的纹理)
+            </p></td>
         </tr>
 
 	
@@ -4742,7 +4746,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>Optional Group to add the object to. If not specified it will be added to the World group.</p></td>
+            <td class="description last"><p>Optional Group to add the object to. If not specified it will be added to the World group.<br>
+                (指定加入到某一个Group中,如果没有指定,则自动加入到世界Group中)
+            </p></td>
         </tr>
 
 	
@@ -4765,7 +4771,7 @@ return {number} The total number of PathPoints in this Path.</a>
         </div>
     
     <div class="returns-desc param-desc">
-        <p>The newly created Image object.</p>
+        <p>The newly created Image object.(返回一个图片对象)</p>
     </div>
 
 
@@ -4832,7 +4838,9 @@ return {number} The total number of PathPoints in this Path.</a>
     
     <div class="description">
         <p>A Group is a container for display objects that allows for fast pooling, recycling and collision checks.</p>
-<p>A Physics Group is the same as an ordinary Group except that is has enableBody turned on by default, so any Sprites it creates<br>are automatically given a physics body.</p>
+<p>A Physics Group is the same as an ordinary Group except that is has enableBody turned on by default, so any Sprites it creates<br>are automatically given a physics body.<br>
+(Physics Group和普通的Group一样,只不过它成员的<code>enableBody</code>是默认开启的,所以任何通过该组创建的sprite都会自动拥有物理body)
+</p>
     </div>
     
 
@@ -6380,7 +6388,9 @@ return {number} The total number of PathPoints in this Path.</a>
 
     
     <div class="description">
-        <p>Creates a new Sound object.</p>
+        <p>Creates a new Sound object.<br>
+        (创建一个Sound object)
+        </p>
     </div>
     
 
@@ -6446,7 +6456,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The Game.cache key of the sound that this object will use.</p></td>
+            <td class="description last"><p>The Game.cache key of the sound that this object will use.<br>
+                (需要用的音频文件缓存标识)
+            </p></td>
         </tr>
 
 	
@@ -6485,7 +6497,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The volume at which the sound will be played.</p></td>
+            <td class="description last"><p>The volume at which the sound will be played.<br>
+            (音量)
+            </p></td>
         </tr>
 
 	
@@ -6524,7 +6538,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>Whether or not the sound will loop.</p></td>
+            <td class="description last"><p>Whether or not the sound will loop.<br>
+            (是否循环播放)
+            </p></td>
         </tr>
 
 	
@@ -6652,8 +6668,12 @@ return {number} The total number of PathPoints in this Path.</a>
 
     
     <div class="description">
-        <p>Create a new Sprite with specific position and sprite sheet key.</p>
-<p>At its most basic a Sprite consists of a set of coordinates and a texture that is used when rendered.<br>They also contain additional properties allowing for physics motion (via Sprite.body), input handling (via Sprite.input),<br>events (via Sprite.events), animation (via Sprite.animations), camera culling and more. Please see the Examples for use cases.</p>
+        <p>Create a new Sprite with specific position and sprite sheet key.<code>game.add.sprite(x,y,frame,group)</code></p>
+<p>At its most basic a Sprite consists of a set of coordinates and a texture that is used when rendered.<br>They also contain additional properties allowing for physics motion (via Sprite.body), input handling (via Sprite.input),<br>events (via Sprite.events), animation (via Sprite.animations), camera culling and more. Please see the Examples for use cases.<br>
+    (用指定图片在指定位置创建一个精灵对象)<br>
+    (最基本的精灵在渲染时会用到一组坐标值和一个纹理)<br>
+    (精灵有许多额外的属性可以使用,如物理效果<code>Sprite.body</code>,输入处理<code>Sprite.input</code>,事件<code>Sprite.event</code>,动画<code>Sprite.animations</code>,相机追踪等)
+</p>
     </div>
     
 
@@ -6723,7 +6743,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The x coordinate of the sprite. The coordinate is relative to any parent container this sprite may be in.</p></td>
+            <td class="description last"><p>The x coordinate of the sprite. The coordinate is relative to any parent container this sprite may be in.<br>
+                (x坐标)
+            </p></td>
         </tr>
 
 	
@@ -6762,7 +6784,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The y coordinate of the sprite. The coordinate is relative to any parent container this sprite may be in.</p></td>
+            <td class="description last"><p>The y coordinate of the sprite. The coordinate is relative to any parent container this sprite may be in.<br>
+                (y坐标)
+            </p></td>
         </tr>
 
 	
@@ -6811,7 +6835,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The image used as a texture by this display object during rendering. If a string Phaser will get for an entry in the Image Cache. Or it can be an instance of a RenderTexture, BitmapData, Video or PIXI.Texture.</p></td>
+            <td class="description last"><p>The image used as a texture by this display object during rendering. If a string Phaser will get for an entry in the Image Cache. Or it can be an instance of a RenderTexture, BitmapData, Video or PIXI.Texture.<br>
+                (精灵对象所使用的纹理标识,可以是图片,也可以是<code>RenderTexture, BitmapData, Video or PIXI.Texture.</code>)
+            </p></td>
         </tr>
 
 	
@@ -6851,7 +6877,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>If a Texture Atlas or Sprite Sheet is used this allows you to specify the frame to be used. Use either an integer for a Frame ID or a string for a frame name.</p></td>
+            <td class="description last"><p>If a Texture Atlas or Sprite Sheet is used this allows you to specify the frame to be used. Use either an integer for a Frame ID or a string for a frame name.<br>
+                (如果你使用了spritesheet或者Atlas作为纹理,那么你可以通过指定一个具体的帧数作为渲染时的纹理)
+            </p></td>
         </tr>
 
 	
@@ -6888,7 +6916,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>Optional Group to add the object to. If not specified it will be added to the World group.</p></td>
+            <td class="description last"><p>Optional Group to add the object to. If not specified it will be added to the World group.<br>
+                (指定加入某个Group,不指定则默认加入World Group)
+            </p></td>
         </tr>
 
 	
@@ -7213,7 +7243,9 @@ return {number} The total number of PathPoints in this Path.</a>
 
     
     <div class="description">
-        <p>Creates a new Text object.</p>
+        <p>Creates a new Text object.<code>game.add.text(x,y,text,style,group)</code><br>
+            (创建一个文本对象)
+        </p>
     </div>
     
 
@@ -8186,8 +8218,10 @@ return {number} The total number of PathPoints in this Path.</a>
 
     
     <div class="description">
-        <p>Create a tween on a specific object.</p>
-<p>The object can be any JavaScript object or Phaser object such as Sprite.</p>
+        <p>Create a tween on a specific object.<code>game.add.tween(object)</code></p>
+<p>The object can be any JavaScript object or Phaser object such as Sprite.<br>
+    (在一个指定的对象上创建补间动画,这个对象可以是任何JavaScript对象或者是phaser对象,例如Sprite)
+</p>
     </div>
     
 
@@ -8260,7 +8294,7 @@ return {number} The total number of PathPoints in this Path.</a>
         </div>
     
     <div class="returns-desc param-desc">
-        <p>The newly created Phaser.Tween object.</p>
+        <p>The newly created Phaser.Tween object.(返回一个Phaser.Tween object)</p>
     </div>
 
 
@@ -8326,8 +8360,10 @@ return {number} The total number of PathPoints in this Path.</a>
 
     
     <div class="description">
-        <p>Create a Video object.</p>
-<p>This will return a Phaser.Video object which you can pass to a Sprite to be used as a texture.</p>
+        <p>Create a Video object.<code>game.add.video(key,url)</code></p>
+<p>This will return a Phaser.Video object which you can pass to a Sprite to be used as a texture.<br>
+    (创建一个视频对象, 可以作为sprite的纹理)
+</p>
     </div>
     
 
@@ -8531,10 +8567,16 @@ return {number} The total number of PathPoints in this Path.</a>
 
     
     <div class="description">
-        <p>Weapons provide the ability to easily create a bullet pool and manager.</p>
+        <p>Weapons provide the ability to easily create a bullet pool and manager.<code>game.add.weapons(quantity,key,frame,group)</code></p>
 <p>Weapons fire Phaser.Bullet objects, which are essentially Sprites with a few extra properties.<br>The Bullets are enabled for Arcade Physics. They do not currently work with P2 Physics.</p>
 <p>The Bullets are created inside of <code>Weapon.bullets</code>, which is a Phaser.Group instance. Anything you<br>can usually do with a Group, such as move it around the display list, iterate it, etc can be done<br>to the bullets Group too.</p>
-<p>Bullets can have textures and even animations. You can control the speed at which they are fired,<br>the firing rate, the firing angle, and even set things like gravity for them.</p>
+<p>Bullets can have textures and even animations. You can control the speed at which they are fired,<br>the firing rate, the firing angle, and even set things like gravity for them.<br>
+    (武器对象可以简单的创建子弹池和子弹管理器)<br>
+    (武器发射子弹对象(<code>Phaser.Bullet</code>),子弹对象本质上也是一个精灵,但是它比普通精灵多了一些额外的属性)<br>
+    (子弹对象可以开启Arcade物理引擎,目前不支持P2物理引擎)<br>
+    (子弹对象是由内部的<code>Weapon.Bullet</code>创建的,它是<code>Phaser.Group</code>的实例,所有Group能做到的事情,子弹Group都能做到)<br>
+    (子弹对象可以有纹理和动画,你可以控制它发射的速度,频率,角度,甚至可以为它们设置重力)
+</p>
     </div>
     
 
@@ -8604,7 +8646,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The quantity of bullets to seed the Weapon with. If -1 it will set the pool to automatically expand.</p></td>
+            <td class="description last"><p>The quantity of bullets to seed the Weapon with. If -1 it will set the pool to automatically expand.<br>
+                    (武器里的子弹数量,设置为-1则武器自动填满)
+                </p></td>
         </tr>
 
 	
@@ -8653,7 +8697,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The image used as a texture by the bullets during rendering. If a string Phaser will get for an entry in the Image Cache. Or it can be an instance of a RenderTexture, BitmapData, Video or PIXI.Texture.</p></td>
+            <td class="description last"><p>The image used as a texture by the bullets during rendering. If a string Phaser will get for an entry in the Image Cache. Or it can be an instance of a RenderTexture, BitmapData, Video or PIXI.Texture.<br>
+                (子弹纹理的图片标识,可以是普通的图片,也可以是RenderTexture, BitmapData, Video or PIXI.Texture)
+            </p></td>
         </tr>
 
 	
@@ -8693,7 +8739,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>If a Texture Atlas or Sprite Sheet is used this allows you to specify the frame to be used by the bullets. Use either an integer for a Frame ID or a string for a frame name.</p></td>
+            <td class="description last"><p>If a Texture Atlas or Sprite Sheet is used this allows you to specify the frame to be used by the bullets. Use either an integer for a Frame ID or a string for a frame name.<br>
+                (如果你使用了Atlas或者SpriteSheet,则可指定某一帧作为渲染的纹理)
+            </p></td>
         </tr>
 
 	
@@ -8730,7 +8778,9 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>Optional Group to add the Weapon to. If not specified it will be added to the World group.</p></td>
+            <td class="description last"><p>Optional Group to add the Weapon to. If not specified it will be added to the World group.<br>
+                (指定加入某个Group,若不指定,则自动加入World Group)
+            </p></td>
         </tr>
 
 	
