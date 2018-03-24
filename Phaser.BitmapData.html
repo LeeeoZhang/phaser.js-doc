@@ -1313,7 +1313,13 @@ return {number} The total number of PathPoints in this Path.</a>
     <div class="description">
         <p>A BitmapData object contains a Canvas element to which you can draw anything you like via normal Canvas context operations.<br>A single BitmapData can be used as the texture for one or many Images / Sprites.<br>So if you need to dynamically create a Sprite texture then they are a good choice.</p>
 <p>Important note: Every BitmapData creates its own Canvas element. Because BitmapData's are now Game Objects themselves, and don't<br>live on the display list, they are NOT automatically cleared when you change State. Therefore you <em>must</em> call BitmapData.destroy<br>in your State's shutdown method if you wish to free-up the resources the BitmapData used, it will not happen for you.</p>
-    </div>
+    <p>一个BitmapDate（位图）对象包含了一个canvas元素，你可以通过的绘图API在这个canvas元素上绘制任何你想绘制的东西。</p>
+		<p>BitmapData也可以作为精灵和图像的纹理。</p>
+		<p>因此如果你想创建一个自己精灵纹理，BitmapDate是个很好的选择。</p>
+		<p>注意：每一个BitmapData都有一个属于自己的canvas元素。BitmapData自己本身就是一个游戏对象，它并不存在于游戏舞台的展示列表中，当你变换场景时，BitmapData并不会自动的清除。
+			因此如果你想在场景关闭或转换时释放BitmapData所占的资源，就需要手动调用BitmapData的<code>destroy()</code>方法。
+		</p>
+	</div>
     
 
     
@@ -1378,7 +1384,10 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>A reference to the currently running game.</p></td>
+            <td class="description last">
+				<p>A reference to the currently running game.</p>
+				<p>当前游戏对象的引用</p>
+			</td>
         </tr>
 
 	
@@ -1413,7 +1422,10 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>Internal Phaser reference key for the BitmapData.</p></td>
+            <td class="description last">
+				<p>Internal Phaser reference key for the BitmapData.</p>
+				<p>BitmapData的内部引用名称</p>
+			</td>
         </tr>
 
 	
@@ -1452,7 +1464,10 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The width of the BitmapData in pixels. If undefined or zero it's set to a default value.</p></td>
+            <td class="description last">
+				<p>The width of the BitmapData in pixels. If undefined or zero it's set to a default value.</p>
+				<p>BitmapData的宽，如果没有指定，则为默认值（256px）</p>
+			</td>
         </tr>
 
 	
@@ -1491,7 +1506,10 @@ return {number} The total number of PathPoints in this Path.</a>
                 </td>
             
 
-            <td class="description last"><p>The height of the BitmapData in pixels. If undefined or zero it's set to a default value.</p></td>
+            <td class="description last">
+				<p>The height of the BitmapData in pixels. If undefined or zero it's set to a default value.</p>
+				<p>BitmapData的高，如果没有指定，则为默认值（256px）</p>
+			</td>
         </tr>
 
 	
